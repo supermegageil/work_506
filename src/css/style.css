@@ -150,27 +150,38 @@ footer {
 #info {
   width: 100%;
   height: 100vh;
-  padding: 100px 0px; }
+  padding: 0px 0px; }
   #info .info__inner {
     width: 1180px;
-    margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px; }
+    margin: 0 auto; }
+    #info .info__inner > h1 {
+      font-size: 30px;
+      text-align: center;
+      padding-bottom: 20px; }
     #info .info__inner .info__wrap {
       width: 100%; }
       #info .info__inner .info__wrap article {
-        width: 20%;
+        width: 25%;
         float: left;
-        padding: 0px; }
+        padding: 20px; }
         #info .info__inner .info__wrap article .pic {
           width: 100%;
-          height: 200px;
+          height: 75vh;
           overflow: hidden; }
           #info .info__inner .info__wrap article .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.8s; }
+            transition: 0.7s;
+            filter: grayscale(1); }
+          #info .info__inner .info__wrap article .pic:hover img {
+            filter: none;
+            transform: scale(1.1);
+            transition: all 0.7s; }
+        #info .info__inner .info__wrap article h2 {
+          text-align: center;
+          padding: 10px;
+          font: var(--font-regular); }
 
 #brand {
   width: 100%;
@@ -262,39 +273,28 @@ footer {
 
 #department {
   width: 100%;
-  height: 100vh;
+  height: 600px;
   padding: 0px 0px; }
   #department .department__inner {
     width: 1180px;
-    margin: 0 auto; }
-    #department .department__inner > h1 {
-      font-size: 30px;
-      text-align: center;
-      padding-bottom: 20px; }
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px; }
     #department .department__inner .department__wrap {
       width: 100%; }
       #department .department__inner .department__wrap article {
-        width: 25%;
+        width: 20%;
         float: left;
-        padding: 20px; }
+        padding: 0px; }
         #department .department__inner .department__wrap article .pic {
           width: 100%;
-          height: 75vh;
+          height: 200px;
           overflow: hidden; }
           #department .department__inner .department__wrap article .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.7s;
-            filter: grayscale(1); }
-          #department .department__inner .department__wrap article .pic:hover img {
-            filter: none;
-            transform: scale(1.1);
-            transition: all 0.7s; }
-        #department .department__inner .department__wrap article h2 {
-          text-align: center;
-          padding: 10px;
-          font: var(--font-regular); }
+            transition: 0.8s; }
 
 .community .inner {
   padding-top: 150px;
