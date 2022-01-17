@@ -71,7 +71,7 @@ function Join(){
       errs.interests='관심사를 하나이상 선택하세요.';
     }
     if( !val.color ){
-      errs.edu='좋아하는 색을 선택해주세요.'
+      errs.color='좋아하는 색을 선택해주세요.'
     }
     return errs;
   }
@@ -97,10 +97,10 @@ function Join(){
 
         <form onSubmit={handleSubmit} >
           <fieldset>
-            <legend className='h'>회원가입</legend>
+            
 
             <table>
-              <caption className='h'>회원가입 입력</caption>
+              
               <tbody>
                 {/* userid */}
                 <tr>

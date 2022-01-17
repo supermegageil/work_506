@@ -449,14 +449,12 @@ footer {
     color: hotpink; }
 
 .join .inner table {
-  background-color: var(--color-yellow-01);
-  width: 50%; }
+  width: 100%; }
   .join .inner table th, .join .inner table td {
-    border-bottom: 1px dashed white;
+    border-bottom: 1px solid white;
     padding: 10px 10px; }
   .join .inner table th {
     width: 20%;
-    border-right: 1px dashed white;
     text-align: left;
     font: bold 14px/1 'dosis';
     color: var(--color-darkgray-02); }
@@ -467,14 +465,13 @@ footer {
         width: 100px;
         height: 40px;
         border: 1px solid var(--color-white);
-        border-radius: 50%;
         text-align: center;
         margin: 10px;
         cursor: pointer;
         transition: 0.5s; }
         .join .inner table th.btnSet input[type=reset]:hover, .join .inner table th.btnSet input[type=submit]:hover {
-          background: var(--color-skyblue);
-          color: var(--color-white-00); }
+          background: yellow;
+          color: var(--color-black); }
   .join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
     width: 60%;
     padding: 10px 20px; }
@@ -482,7 +479,6 @@ footer {
     width: 60%;
     height: 150px;
     padding: 10px 20px;
-    border: 1px solid #aaa;
     resize: none; }
   .join .inner table td label {
     font: 12px/1 'dosis';
@@ -491,7 +487,7 @@ footer {
   .join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
     margin-right: 20px; }
 .join .inner .err {
-  font: 11px/1 '맑은 고딕';
+  font: 11px/1 '고딕';
   color: black; }
 
 @media screen and (max-width: 1199px) {
