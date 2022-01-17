@@ -58,21 +58,21 @@ header {
   width: 100%; }
   header .inner {
     width: 1180px;
-    height: 100px;
+    height: 120px;
     margin: 0px auto;
     position: relative; }
     header .inner h1 {
       position: absolute;
       left: 0px;
-      bottom: 20px; }
+      bottom: 25px; }
       header .inner h1 a {
-        font: bold 26px/1 "dosis";
+        font: bold 28px/1 "dosis";
         color: var(--color-darkgray-00); }
       header .inner h1 :hover {
         background-color: yellow; }
     header .inner #gnb {
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       right: 0px; }
       header .inner #gnb li {
         float: left;
@@ -121,8 +121,7 @@ footer {
     width: 100%; } }
 #visual {
   width: 100%;
-  height: 80vh;
-  background: #0c0c0b; }
+  height: 85vh; }
   #visual .blackbox {
     width: 500px;
     height: 220px;
@@ -150,12 +149,12 @@ footer {
 #info {
   width: 100%;
   height: 100vh;
-  padding: 0px 0px; }
+  padding: 110px 0px; }
   #info .info__inner {
     width: 1180px;
     margin: 0 auto; }
     #info .info__inner > h1 {
-      font-size: 30px;
+      font: 24px 'dosis';
       text-align: center;
       padding-bottom: 20px; }
     #info .info__inner .info__wrap {
@@ -166,7 +165,7 @@ footer {
         padding: 20px; }
         #info .info__inner .info__wrap article .pic {
           width: 100%;
-          height: 75vh;
+          height: 50vh;
           overflow: hidden; }
           #info .info__inner .info__wrap article .pic img {
             width: 100%;
@@ -181,7 +180,7 @@ footer {
         #info .info__inner .info__wrap article h2 {
           text-align: center;
           padding: 10px;
-          font: var(--font-regular); }
+          font: var(--font-regular) "dosis"; }
 
 #brand {
   width: 100%;

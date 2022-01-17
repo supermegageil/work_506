@@ -24,13 +24,13 @@
 header {
     width: 100%; 
     .inner {
-        width: 1180px; height: 100px; margin:0px auto;
+        width: 1180px; height: 120px; margin:0px auto;
         position: relative;
 
         h1{
-            position: absolute; left: 0px; bottom:20px;
+            position: absolute; left: 0px; bottom: 25px;
             a{
-                font: bold 26px/1 "dosis"; color: var(--color-darkgray-00);
+                font: bold 28px/1 "dosis"; color: var(--color-darkgray-00);
             }
             :hover{
                 background-color: yellow;
@@ -38,7 +38,7 @@ header {
         }
 
         #gnb {
-            position: absolute;bottom: 0px;right: 0px;
+            position: absolute;bottom: 5px;right: 0px;
 
             li{
                 float:left;  padding: 10px 30px;

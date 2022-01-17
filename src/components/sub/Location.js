@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-//90ea14233e21851346d48af3bc08c574
-
 
 function Location(){ 
   const frame = useRef(null);
