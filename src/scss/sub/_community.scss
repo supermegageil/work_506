@@ -3,6 +3,8 @@
         padding-top:150px;
         padding-bottom:150px;
         article {
+            //background-color: var(--color-darkgray-01);
+            background-color: yellow;
             padding: 20px 10px;
             margin-bottom:20px;
             border-top: 1px dashed rgb(247, 242, 242);
@@ -15,7 +17,7 @@
             
             h1{
                 font-weight: normal;
-                color:white;
+                color:var(--color-darkgray-01);
                 font-size: 15px;
             
             }
@@ -25,13 +27,13 @@
             .dateandwriter {
                 span {
                     font-size: 15px;
-                    color: white;
+                    color: var(--color-darkgray-01);
                 }
                 em {
                     margin-left:20px;
                     font-size: 15px;
                     font-style: normal;
-                    color: white;
+                    color: var(--color-darkgray-01);
                 }
                 :hover{
                     color: var(--color-yellow-01);
