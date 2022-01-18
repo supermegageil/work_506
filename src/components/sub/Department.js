@@ -9,7 +9,7 @@ function Department() {
                 <div class="department__wrap">
                     <article>
                         <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
+                            <img src={path+"/img/team.jpeg"} />
                         </div>
                     </article>
                     <article>
@@ -46,43 +46,7 @@ function Department() {
                         <div class="pic">
                             <img src={path+"/img/pic.jpeg"} />
                         </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    <article>
-                        <div class="pic">
-                            <img src={path+"/img/pic.jpeg"} />
-                        </div>
-                    </article>
-                    
+                    </article>                
                 </div>
             </div>
         </div>

@@ -1,25 +1,25 @@
 #department{
     width:100%; 
-    height: 80vh;
+    height: 100vh;
     padding: 50px 0px;
 
     .department__inner{
     width:1180px; 
     margin:0 auto; 
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:10px;
+    padding-right:10px;
 
     .department__wrap{
         width:100%; 
 
         article{
-            width:20%; 
+            width:25%; 
             float:left; 
-            padding:0px;
+            padding:15px;
            
             .pic{
                 width:100%; 
-                height:200px; 
+                height:300px; 
                 overflow:hidden;
               
                 img{
