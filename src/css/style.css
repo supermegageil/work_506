@@ -309,14 +309,18 @@ footer {
       font-weight: normal;
       color: var(--color-darkgray-01);
       font-size: 15px; }
-      .community .inner article h1 .dateandwriter span {
-        font-size: 15px;
-        color: var(--color-darkgray-01); }
-      .community .inner article h1 .dateandwriter em {
-        margin-left: 20px;
-        font-size: 15px;
-        font-style: normal;
-        color: var(--color-darkgray-01); }
+    .community .inner article :hover {
+      color: var(--color-skyblue); }
+    .community .inner article .dateandwriter span {
+      font-size: 15px;
+      color: var(--color-darkgray-01); }
+    .community .inner article .dateandwriter em {
+      margin-left: 20px;
+      font-size: 15px;
+      font-style: normal;
+      color: var(--color-darkgray-01); }
+    .community .inner article .dateandwriter :hover {
+      color: var(--color-skyblue); }
 
 .gallery {
   padding-top: 30px; }
@@ -572,6 +576,6 @@ footer {
         margin-right: 20px; }
     .join .inner .err {
       font: 14px/1 'arial';
-      color: red; } }
+      color: --color-skyblue; } }
 
 /*# sourceMappingURL=style.css.map */

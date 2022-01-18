@@ -20,7 +20,9 @@
                 color:var(--color-darkgray-01);
                 font-size: 15px;
             
-           
+            }
+            :hover{
+                color: var(--color-skyblue);}
                 
             .dateandwriter {
                 span {
@@ -33,10 +35,11 @@
                     font-style: normal;
                     color: var(--color-darkgray-01);
                 }
-                //:hover{color: var(--color-yellow-01);
+                :hover{
+                    color: var(--color-skyblue);}
                     
                 }
             }
         }
     }  
-}
+           
