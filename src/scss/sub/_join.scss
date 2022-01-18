@@ -8,6 +8,7 @@
 
        fieldset{
         border:5px solid var(--color-white-00);
+        padding:20px;
         
         table {
           width: 100%;
@@ -185,7 +186,7 @@
         }    
       }
       .err {
-        font: 14px/1 'arial'; color:var(--color-skyblue);
+        font: 14px/1 'arial'; color:(--color-skyblue);
       }
     }
   }

@@ -187,7 +187,7 @@ footer {
   padding: 100px 0;
   margin-bottom: 100px;
   background: var(--color-white);
-  border: 1px solid red; }
+  border: 100px solid var(--color-white-01); }
   #brand .brand__inner {
     width: 1180px;
     margin: 0 auto; }
@@ -309,18 +309,14 @@ footer {
       font-weight: normal;
       color: var(--color-darkgray-01);
       font-size: 15px; }
-    .community .inner article :hover {
-      color: var(--color-skyblue); }
-    .community .inner article .dateandwriter span {
-      font-size: 15px;
-      color: var(--color-darkgray-01); }
-    .community .inner article .dateandwriter em {
-      margin-left: 20px;
-      font-size: 15px;
-      font-style: normal;
-      color: var(--color-darkgray-01); }
-    .community .inner article .dateandwriter :hover {
-      color: var(--color-yellow-01); }
+      .community .inner article h1 .dateandwriter span {
+        font-size: 15px;
+        color: var(--color-darkgray-01); }
+      .community .inner article h1 .dateandwriter em {
+        margin-left: 20px;
+        font-size: 15px;
+        font-style: normal;
+        color: var(--color-darkgray-01); }
 
 .gallery {
   padding-top: 30px; }
@@ -455,7 +451,8 @@ footer {
     position: relative;
     padding: 60px; }
     .join .inner fieldset {
-      border: 5px solid var(--color-white-00); }
+      border: 5px solid var(--color-white-00);
+      padding: 20px; }
       .join .inner fieldset table {
         width: 100%;
         background-color: var(--color-white-00);
@@ -575,6 +572,6 @@ footer {
         margin-right: 20px; }
     .join .inner .err {
       font: 14px/1 'arial';
-      color: var(--color-skyblue); } }
+      color: red; } }
 
 /*# sourceMappingURL=style.css.map */

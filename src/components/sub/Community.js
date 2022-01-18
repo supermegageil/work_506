@@ -20,6 +20,10 @@ function Community(){
         <main className="community">
             <div className="inner">
             <h1><a href="#"></a></h1>
+
+        
+            
+
                 {
                     posts.map((data, index)=>{
                         return (
@@ -33,8 +37,11 @@ function Community(){
                     })
                 }
             </div>
+          
         </main>
     )
 }
 
 export default Community;
+
+
