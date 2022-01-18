@@ -15,6 +15,7 @@ function Department() {
                     <article>
                         <div class="pic">
                             <img src={path+"/img/pic.jpeg"} />
+                            <h1>Matthias Brand</h1>
                         </div>
                     </article>
                     <article>

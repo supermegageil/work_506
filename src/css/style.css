@@ -293,6 +293,8 @@ footer {
             height: 100%;
             object-fit: cover;
             transition: 0.8s; }
+          #department .department__inner .department__wrap article .pic h1 {
+            font: 18px normal "dosis" white; }
 
 .community .inner {
   padding-top: 150px;
