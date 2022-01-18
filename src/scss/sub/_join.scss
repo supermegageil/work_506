@@ -1,94 +1,193 @@
-.join {
+  .join {
+    width:100%;
     .inner {
+      width:1180px;
+      margin: 0 auto;
+      position:relative;
+      padding:60px;
 
+       fieldset{
+        border:5px solid var(--color-white-00);
+        
         table {
-        //background-color: var(--color-gray-01);
-        //background-color: var(--color-gray-00);
-        width: 100%;
-  
-        th, td {
-          border-bottom: 1px solid white; padding: 10px 10px;
-        }
-  
-        th {
-          width: 20%;  text-align: left;
-          font: bold 14px/1 'dosis'; 
-          color:var(--color-darkgray-02);
-  
-          &.btnSet {
-            text-align: center;  border-right: none;
-  
-            input[type=reset], input[type=submit] {
-              width: 100px; height: 40px; border: 1px solid var(--color-white);
-              text-align: center; margin: 10px; cursor: pointer; transition: 0.5s;
-  
-              &:hover {
-                background: yellow; color: var(--color-black);
+          width: 100%;
+          background-color: var(--color-white-00);;
+          padding: 0px;
+          
+          th, td {
+          padding: 10px 20px;
+          }
+    
+          th {
+            width: 25%; 
+            text-align: center;
+            font: bold 14px/1 'dosis';
+            color:var(--color-darkgray-00);
+
+            &:hover{
+              background-color: yellow;
+            }
+    
+            &.btnSet {
+              text-align: center;  border-right: none;
+    
+              input[type=reset], input[type=submit] {
+                width: 18%;
+                height: 40px;
+                text-align: center;
+                margin: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+                border:none;
+                color:var(--color-darkgray-00);
+                background-color: yellow;
+                font: bold 16px 'dosis';
+                    
+                &:hover {
+                  background:var(--color-white-00);
+                  color:var(--color-darkgray-02);
+                }
               }
             }
           }
-        }
-        td {
-          input[type=text], input[type=password], select {
-            width: 60%; padding: 10px 20px; 
-          }
-          textarea {
-            width: 60%; height: 150px; padding: 10px 20px; //border: 1px solid #aaa;
-            resize: none;
-          }
-          label {
-            font: 12px/1 'dosis'; color:white; margin-right: 5px;
-          }
-          input[type=radio], input[type=checkbox] {
-            margin-right: 20px;
+
+          td {
+            input[type=text], input[type=password], select {
+              width: 70%; padding: 10px 20px; 
+            }
+            textarea {
+              width: 70%; height: 150px; padding: 10px 20px;
+              resize: none;
+            }
+            label {
+              font: 14px/1 'dosis'; color:var(--color-darkgray-02); margin-right: 8px;
+              
+            }
+            input[type=radio], input[type=checkbox] {
+              margin-right: 20px;
+            }
           }
         }
       }
-  
-  
+      
+  //폰트와 색 나중에 변경
       .err {
-        font: 11px/1 '고딕'; color: black;
+        font: 12px/1 'arial'; color:var(--color-skyblue);
       }
-    }
   }
-  
-  @media screen and (max-width: $web){
-    .join .inner table td {
-      input[type=text], input[type=password], select {
-        width: 90%;  
-      }
-      textarea {
-        width: 90%; 
-      }
-     
-    }
-  
-  }
-  
-  @media screen and (max-width: $tablet){
-    .join .inner table th {
-      position: absolute; top: -99999px; opacity: 0;
-  
-      &.btnSet {
-        position: relative;
-        top: 0px;
-        opacity: 1;
-      }
-    }
-  
-    .join .inner table td {
-      input[type=text], input[type=password], select {
-        width: 100%;  
-      }
-      textarea {
-        width: 100%; 
-      }
-     
-    }
+}
+//tablet//
+@media screen and (max-width:1179px){
+  .join {
+    .inner {
+      width:100%; 
+      padding:0px;
+         
+      fieldset{
+        table {
+          width: 100%;
+          padding: 0px;
+              
+          th, td {
+            padding: 10px 20px;
+          }
     
-  }
-  
-  @media screen and (max-width: $mobile){
-  
+          th {            
+            font: 16px/1 'dosis';
+                
+            &.btnSet {
+              text-align: center;  border-right: none;
     
+              input[type=reset], input[type=submit] {
+                width: 18%;
+                height: 40px;
+                text-align: center;
+                margin: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+                border:none;
+                color:var(--color-darkgray-00);
+                background-color: yellow;
+                font: bold 16/40px 'dosis';
+                }
+              }
+            }
+          td {
+            input[type=text], input[type=password], select {
+              width: 70%; padding: 10px 20px; 
+            }
+            textarea {
+              width: 70%; height: 150px; padding: 10px 20px;
+              resize: none;
+            }
+            label {
+              font: 16px/1 'dosis'; color:var(--color-darkgray-02); margin-right: 8px;
+              
+            }
+            input[type=radio], input[type=checkbox] {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+        .err {
+          font: 14px/1 'arial'; color:var(--color-skyblue);
+      }
+    }
   }
+}
+
+//mobile//
+@media screen and (max-width:539px){
+
+  .join {
+    .inner {
+      width:100%;
+      fieldset{
+          table {
+          width: 100%;
+          
+          th, td {
+            border-bottom: 1px solid rgb(28,42,43);
+            padding: 15px 30px;
+          }
+    
+          th {
+            font: 16px/1 'dosis';
+            color:var(--color-darkgray-00);
+    
+            &.btnSet {
+              text-align: center;  
+              border-right: none;
+    
+              input[type=reset], input[type=submit] {
+                width:20%;
+                height: 45px;
+                font:bold 16px/45px 'dosis';
+              }
+            }
+          }
+          td {
+            input[type=text], input[type=password], select {
+              width: 80%; 
+            }
+            textarea {
+              width: 80%; 
+            }
+            label {
+              font: 14px/1 'dosis'; 
+              color:var(--color-darkgray-02);
+            }
+            input[type=radio], input[type=checkbox] {
+              margin-right: 20px;
+            }
+          }
+        }    
+      }
+      .err {
+        font: 14px/1 'arial'; color:var(--color-skyblue);
+      }
+    }
+  }
+}
+

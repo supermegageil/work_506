@@ -210,14 +210,6 @@ function Join(){
                       onChange = {handleCheck} 
                     />
 
-                    <label htmlFor='other'>Other</label>
-                    <input 
-                      type="radio" 
-                      id='other' 
-                      name='gender' 
-                      onChange = {handleCheck} 
-                    />
-
                     <span className='err'>{err.gender}</span>
                   </td>
                 </tr>
