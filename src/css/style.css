@@ -55,9 +55,9 @@ header {
     header .inner h1 {
       position: absolute;
       left: 0px;
-      bottom: 25px; }
+      bottom: 30px; }
       header .inner h1 a {
-        font: bold 18px/1 'open sans';
+        font: bold 14px/1 'open sans';
         color: var(--color-darkgray-00);
         font-weight: 300;
         letter-spacing: 1px; }
@@ -65,7 +65,7 @@ header {
         background-color: yellow; }
     header .inner #gnb {
       position: absolute;
-      bottom: 5px;
+      bottom: 8px;
       right: 0px; }
       header .inner #gnb li {
         float: left;
@@ -160,23 +160,24 @@ footer {
 
 #visual {
   width: 100%;
-  height: 85vh; }
+  height: 80vh; }
   #visual .visual__txt01 {
-    font: 187px 'arial';
+    font: 195px/200px 'arial';
     font-weight: 900;
     color: var(--color-white-01);
     position: absolute;
     top: 60px;
     left: 30px;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: .9; }
   #visual .visual__txt02 {
-    display: inline-block;
     font: 10px normal 'dosis';
     font-weight: 300;
     color: var(--color-white-01);
     position: absolute;
     top: 350px;
-    left: 550px; }
+    left: 550px;
+    display: none; }
   #visual img {
     width: 100%;
     height: 100%;

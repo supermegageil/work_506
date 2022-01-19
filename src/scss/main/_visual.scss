@@ -1,26 +1,28 @@
 #visual {
-  width: 100%;  height: 85vh;
+  width: 100%;  height: 80vh;
   
   .visual__txt01{
-    font:187px 'arial';
+    font:195px/200px
+     'arial';
     font-weight: 900;
     color:var(--color-white-01);
     position: absolute;
     top:60px; left:30px;
     overflow: hidden;
+    opacity:.9;
     
-
-   }
+  }
     
     
   .visual__txt02{
-    display: inline-block;
+    
     font:10px normal 'dosis';
     font-weight: 300;
     color:var(--color-white-01);
     position: absolute;
     top:350px; 
     left:550px;
+    display:none;
   }
   
    
