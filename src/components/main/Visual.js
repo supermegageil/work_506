@@ -4,13 +4,10 @@ const path = process.env.PUBLIC_URL;
 function Visual() {
     return (
         <figure id="visual">
-            <img className="visualImage" alt="이미지" src={path+"/img/arch27.jpeg"} />
-            <div className="blackbox">
-                <div className="blackbox__inner">
-                    <div className="yellowbox">Lorem, ipsum dolor.</div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem itaque nam neque nobis necessitatibus aliquam quasi dignissimos accusantium quod suscipit.</p>
-                </div>
-            </div>
+            <img className="visual__img" alt="이미지" src={path+"/img/arch27.jpeg"} />
+            <h1 class="visual__txt01">MEHR ALS DU DIR VORSTELLEN KANNST</h1>
+            <h2 class="visual__txt02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est, blanditiis repudiandae at dolores sint earum aliquid quod! Ex, obcaecati dignissimos! Dignissimos, quaerat iure? Provident quae eius rem dolor eos!</h2>
+           
         </figure>
         
 

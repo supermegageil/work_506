@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Licorice&family=Raleway:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;400;500;600;700;900&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,800&display=swap");
 :root {
   --color-white-00: #ffffff;
   --color-white-01:#efefef;
@@ -57,9 +57,9 @@ header {
       left: 0px;
       bottom: 25px; }
       header .inner h1 a {
-        font: bold 28px/1 'dosis';
+        font: bold 18px/1 'open sans';
         color: var(--color-darkgray-00);
-        font-weight: 900;
+        font-weight: 300;
         letter-spacing: 1px; }
       header .inner h1 :hover {
         background-color: yellow; }
@@ -161,25 +161,22 @@ footer {
 #visual {
   width: 100%;
   height: 85vh; }
-  #visual .blackbox {
-    width: 500px;
-    height: 220px;
+  #visual .visual__txt01 {
+    font: 187px 'arial';
+    font-weight: 900;
+    color: var(--color-white-01);
     position: absolute;
-    right: 120px;
-    bottom: 200px; }
-    #visual .blackbox .blackbox__inner {
-      width: 100%;
-      height: 100%;
-      padding: 40px;
-      background-color: black;
-      opacity: 60%; }
-      #visual .blackbox .blackbox__inner .yellowbox {
-        background-color: yellow;
-        width: 250px;
-        height: 40px; }
-      #visual .blackbox .blackbox__inner p {
-        font: 14px normal 'dosis';
-        color: white; }
+    top: 60px;
+    left: 30px;
+    overflow: hidden; }
+  #visual .visual__txt02 {
+    display: inline-block;
+    font: 10px normal 'dosis';
+    font-weight: 300;
+    color: var(--color-white-01);
+    position: absolute;
+    top: 350px;
+    left: 550px; }
   #visual img {
     width: 100%;
     height: 100%;
