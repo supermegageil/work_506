@@ -19,13 +19,14 @@
 header {
     width: 100%; 
     .inner {
-        width: 1180px; height: 120px; margin:0px auto;
+        width: 1180px; height: 100px; margin:0px auto;
         position: relative;
 
         h1{
             position: absolute; left: 0px; bottom: 25px;
             a{
-                font: bold 28px/1 "dosis"; color: var(--color-darkgray-00);
+                font: bold 28px/1 'dosis'; color: var(--color-darkgray-00); font-weight: 900;
+                letter-spacing: 1px;
             }
             :hover{
                 background-color: yellow;
@@ -40,7 +41,7 @@ header {
 
                 a {
                     display: inline-block; 
-                    font: 16px/1 "dosis"; color:var(--color-darkgray-00);
+                    font: 13px/1 'open sans'; color:var(--color-darkgray-00); font-weight: 300;
                 }
                 :hover{
                     background-color: yellow;}
@@ -83,7 +84,7 @@ footer {
               font-size: 40px;
             }
             h1{
-              font:20px bold 'dosis';
+              font:20px bold 'open sans';
               color:var(--color-darkgray-01);
             }
             
@@ -99,7 +100,7 @@ footer {
                 margin-right:100px;
           
                 li {
-                  font: 13px/1 'arial';
+                  font: 13px/1 'open sans';
                   margin-bottom: 9px;
                   color:var(--color-darkgray-00);
                   cursor: pointer;
@@ -140,7 +141,7 @@ footer {
               flex-direction: column;
               
               p {
-                font: 12px/2 'arial';
+                font: 12px/2 'open sans';
                 color:var(--color-gray-01);
                 cursor: default;
               }

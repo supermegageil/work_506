@@ -1,11 +1,11 @@
 function Footer(){
     const path = process.env.PUBLIC_URL;
-  
+    
     return(
     <footer>
         <div className="footer__inner">
             <div className="footer__top">
-                <h1><a href="#"><i class="fas far fa-circle"></i></a>REACT PORTFOLIO</h1>
+                <h1><a href="#"><i class="fas fa-mountain"></i></a>Lorem ipsum dolor sit amet.</h1>
                 <div className="footer__top__inner">
 
                 <ul className="footer__menu">
