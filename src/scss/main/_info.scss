@@ -8,7 +8,9 @@
         width:1180px; 
         margin:0 auto; 
         >h1{
-            font:24px 'dosis';
+            font:24px 'roboto';
+            color:var(--color-darkgray-01);
+            font-weight: 500;
             text-align: center;
             padding-bottom: 20px;
             }
