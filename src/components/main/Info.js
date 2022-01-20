@@ -4,40 +4,88 @@ const path = process.env.PUBLIC_URL;
 function Info(){
 
   return (
-   <div id="info">
-      <div className="info__inner">
-            < div class="info__top__txt">
+    <div id="info">
+        <div className="info__inner">
+            < div className="info__top__txt">
                 <div className="info__top__txt__left">          <h1>PROJECTS</h1>
                 </div> 
                 <div className="info__top__txt__right">
-                <button>lorem</button>
-                <button>lorem</button>
+                <button>orem</button>
+                <button>orem</button>
                 </div>
-            </ div>
-            
+            </ div>         
          
             
-            <div class="info__wrap">        
-            <article>
-                <div class="pic">
-                    <img src={path+"/img/info.jpeg"} />
-                </div>
-                <h2>Lorem, ipsum.</h2>
-            </article>
-            <article>
-                <div class="pic">
-                    <img src={path+"/img/info.jpeg"} />
-                </div>
-                <h2>Lorem, ipsum.</h2>
-            </article>
-            <article>
-                <div class="pic">
-                    <img src={path+"/img/info.jpeg"} />
-                </div>
-                <h2>Lorem, ipsum.</h2>
-            </article>
+            <div className="info__wrap">        
+                <article>
+                    <div className="info__project01">
+                        <div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, vitae!</h1>
+            
+                        </div>
+                    </div>
+                    
+                </article>
+                <article>
+                <div className="info__project02">
+                        <div className="info__project__txt">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum eius iste obcaecati recusandae deleniti doloremque necessitatibus harum earum rem!</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div className="info__project03">
+                        <div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                        </div>
+                    </div>
+                    
+                </article>
+                <article>
+                <div className="info__project04">
+                        <div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                        </div>
+                    </div>
+                    
+                </article>
+                
+                <article>
+                    <div className="info__project05">
+                        < div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                        </div>
+                    </div>                
+                </article>
+                <article>
+                <div class="info__project06">
+                        < div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                        </div>
+                    </div> 
+                </article>
+                <article>
+                    <div className="info__project07">
+                        <div className="pic">
+                            <img src={path+"/img/info.jpeg"} />
+                        </div>
+                    </div>
+                    
+                </article>
+                <article>
+                    <div className="info__project08">
+                        <div className="info__project__txt">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo nemo enim repudiandae necessitatibus suscipit ipsam saepe eaque dolorem eligendi.</p>
+                        </div>
+                    </div>                
+                </article>               
+            </div>
+
+            
         </div>
-      </div>
     </div>
   )
 }

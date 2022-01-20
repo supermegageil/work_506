@@ -1,15 +1,15 @@
 #info{
     width:100%; 
-    height:100vh;
+    height:200vh;
     padding: 110px 0px;
     
-
     .info__inner{
         width:1180px; 
         margin:0 auto; 
         .info__top__txt{
             height: 50px;
             border-bottom: 1px solid var(--color-gray-01);
+            margin-bottom: 30px;
             .info__top__txt__left{    
                 h1{
                 font:20px 'open sans';
@@ -18,65 +18,87 @@
                 float:left;
                 margin-right: 850px;
                 padding-bottom: 20px;
-                
                 }
-
             }
             .info__top__txt__right{    
                 button{
                 width: 100px; height: 30px;
-                font:14px/30px 'open sans';
+                font:14px/26px 'open sans';
                 color:var(--color-darkgray-01);
                 font-weight: 300;
-               float: left;
-               margin-right: 10px;
-                padding-bottom: 20px;
-                
+                float: left;
+                margin-right: 10px;
+                padding-bottom: 0px;
                 }
-
+                :hover{
+                    color: var(--color-gray-03);
+                    
+               }
             }
-
-        }
-           
+        } 
           
     
-            .info__wrap{
+        .info__wrap{
                 width:100%; 
+                
     
                 article{
-                width:33%; 
-                float:left; 
-                padding:20px;
-            
+                width:25%; 
+                float: left;
+                padding:0px;
+                margin-bottom: 50px;
+
+                    .info__project__txt{
+                        padding:20px;
+                        h2{
+                            font: 16px 'open sans';
+                            color: var
+                            (--color-darkgray-01);
+                            padding-bottom: 20px;
+                            
     
-                .pic{
-                    width:100%; 
-                    height:50vh; 
-                    overflow:hidden;
-                    
-                    
-                    img{
+                        }
+                        p{
+                            font: 14px 'open sans';
+                            color: var(--color-darkgray-01);
+    
+                        }
+                    }
+
+                    .pic{
                         width:100%; 
-                        height:100%; 
-                        object-fit:cover;
-                        transition:0.7s; 
-                        filter: grayscale(1);
-                    }
-    
-                    &:hover img{
-                        filter: none;
-                        transform: scale(1.1);
-                        transition: all 0.7s;
+                        height:50vh; 
+                        overflow:hidden;
+                        
+                        
+                        img{
+                            width:100%; 
+                            height:100%; 
+                            object-fit:cover;
+                            transition:0.7s; 
+                            
+                        }
+                        h1{
+                            opacity:0;
+                            text-align: center;
+                            font: 12px normal 'open sans' var(--color-white-00);
+                            z-index: 1;
+                        }
+        
+                        &:hover img{
+                            filter: brightness(0.5);
+                            transform: scale(1.1);
+                            transition: all 0.7s;
+                        }
+                        &:hover h1{
+                            opacity: .9;
+                            
+                        }
+                        
+        
                     }
                 }
-                h2{
-                    text-align: center;
-                    padding:10px;
-                    font: var(--font-regular) 'dosis';
-                    
-    
-                }
-            }
         }
+        
     }
 }
