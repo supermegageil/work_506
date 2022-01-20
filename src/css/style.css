@@ -534,14 +534,9 @@ footer {
       letter-spacing: 1px;
       margin-left: 1030px; }
   .location .location__inner #map {
-    width: 60%;
+    width: 100%;
     height: 500px;
-    background: var(--color-black-00); }
-  .location .location__inner .branch li {
-    cursor: pointer;
-    color: var(--color-gray-01); }
-    .location .location__inner .branch li.on {
-      color: var(--color-black-00); }
+    filter: grayscale(0.5); }
 
 .join {
   width: 100%; }

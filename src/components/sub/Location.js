@@ -11,14 +11,14 @@ function Location(){
   const [toggle, setToggle] = useState(false);
   const info = [
     {
-      title : "서울 종로 본점",  
+      title : "SEOUL",  
       latlng : new kakao.maps.LatLng(37.569907325261084,126.99291397832287),
       imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },  
     {
-      title : "용인 수지 지점1", 
+      title : "SUJI", 
       latlng : new kakao.maps.LatLng(37.322348388040986,127.05850993971846),
       imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg",
      
@@ -26,7 +26,7 @@ function Location(){
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },
     {
-      title : "부산 지점2", 
+      title : "BUSAN", 
       latlng : new kakao.maps.LatLng(35.15987975727686,129.16971691261583),
       imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
       imgSize : new kakao.maps.Size(232, 99),
