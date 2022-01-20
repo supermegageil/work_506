@@ -190,16 +190,29 @@ footer {
   #info .info__inner {
     width: 1180px;
     margin: 0 auto; }
-    #info .info__inner > h1 {
-      font: 24px 'roboto';
-      color: var(--color-darkgray-01);
-      font-weight: 500;
-      text-align: center;
-      padding-bottom: 20px; }
+    #info .info__inner .info__top__txt {
+      height: 50px;
+      border-bottom: 1px solid var(--color-gray-01); }
+      #info .info__inner .info__top__txt .info__top__txt__left h1 {
+        font: 20px 'open sans';
+        color: var(--color-darkgray-01);
+        font-weight: 300;
+        float: left;
+        margin-right: 850px;
+        padding-bottom: 20px; }
+      #info .info__inner .info__top__txt .info__top__txt__right button {
+        width: 100px;
+        height: 30px;
+        font: 14px/30px 'open sans';
+        color: var(--color-darkgray-01);
+        font-weight: 300;
+        float: left;
+        margin-right: 10px;
+        padding-bottom: 20px; }
     #info .info__inner .info__wrap {
       width: 100%; }
       #info .info__inner .info__wrap article {
-        width: 25%;
+        width: 33%;
         float: left;
         padding: 20px; }
         #info .info__inner .info__wrap article .pic {
