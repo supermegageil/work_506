@@ -186,8 +186,7 @@ footer {
 #info {
   width: 100%;
   height: 130vh;
-  padding: 110px 0px;
-  border: 2px solid red; }
+  padding: 110px 0px; }
   #info .info__inner {
     width: 1180px;
     margin: 0 auto; }
@@ -201,7 +200,8 @@ footer {
         font-weight: 300;
         float: left;
         margin-right: 850px;
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        letter-spacing: 1px; }
       #info .info__inner .info__top__txt .info__top__txt__right button {
         width: 100px;
         height: 30px;
@@ -224,31 +224,26 @@ footer {
           padding: 20px; }
           #info .info__inner .info__wrap article .info__project__txt h2 {
             font: 16px 'open sans';
+            letter-spacing: 1px;
             color: var --color-darkgray-01;
             padding-bottom: 20px; }
           #info .info__inner .info__wrap article .info__project__txt p {
             font: 14px 'open sans';
-            color: var(--color-darkgray-01); }
+            color: var(--color-darkgray-00); }
         #info .info__inner .info__wrap article .pic {
           width: 100%;
           height: 50vh;
           overflow: hidden; }
-          #info .info__inner .info__wrap article .pic h1 {
-            text-align: center;
-            font: 12px normal "open sans" var(--color-white-00); }
           #info .info__inner .info__wrap article .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: 0.7s;
-            z-index: 0;
-            display: none; }
+            filter: grayscale(0.7); }
           #info .info__inner .info__wrap article .pic:hover img {
-            filter: brightness(0.5);
+            filter: none;
             transform: scale(1.1);
-            transition: all 0.7s; }
-          #info .info__inner .info__wrap article .pic:hover h1 {
-            opacity: .5; }
+            transition: all 0.8s; }
 
 #brand {
   width: 100%;

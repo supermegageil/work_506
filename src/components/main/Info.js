@@ -20,9 +20,8 @@ function Info(){
                 <article>
                     <div className="info__project01">
                         <div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, vitae!</h1>
-            
+                            <img src={path+"/img/info1.jpeg"} />
+                            
                         </div>
                     </div>
                     
@@ -38,7 +37,7 @@ function Info(){
                 <article>
                     <div className="info__project03">
                         <div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
+                            <img src={path+"/img/info3.jpeg"} />
                         </div>
                     </div>
                     
@@ -46,7 +45,7 @@ function Info(){
                 <article>
                 <div className="info__project04">
                         <div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
+                            <img src={path+"/img/info4.jpeg"} />
                         </div>
                     </div>
                     
@@ -55,21 +54,21 @@ function Info(){
                 <article>
                     <div className="info__project05">
                         < div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
+                            <img src={path+"/img/info5.jpeg"} />
                         </div>
                     </div>                
                 </article>
                 <article>
                 <div class="info__project06">
                         < div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
+                            <img src={path+"/img/info6.jpeg"} />
                         </div>
                     </div> 
                 </article>
                 <article>
                     <div className="info__project07">
                         <div className="pic">
-                            <img src={path+"/img/info.jpeg"} />
+                            <img src={path+"/img/info7.jpeg"} />
                         </div>
                     </div>
                     
