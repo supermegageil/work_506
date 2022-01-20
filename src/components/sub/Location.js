@@ -11,23 +11,24 @@ function Location(){
   const [toggle, setToggle] = useState(false);
   const info = [
     {
-      title : "본점",  
-      latlng : new kakao.maps.LatLng(37.48771318663092,126.75344867275281),
-      imgSrc : process.env.PUBLIC_URL+"/img/marker1.png", 
+      title : "서울 종로 본점",  
+      latlng : new kakao.maps.LatLng(37.569907325261084,126.99291397832287),
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },  
     {
-      title : "지점1", 
-      latlng : new kakao.maps.LatLng(37.507099899564444,126.75639338893572),
-      imgSrc : process.env.PUBLIC_URL+"/img/marker2.png", 
+      title : "용인 수지 지점1", 
+      latlng : new kakao.maps.LatLng(37.322348388040986,127.05850993971846),
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg",
+     
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },
     {
-      title : "지점2", 
-      latlng : new kakao.maps.LatLng(35.17422705914147,129.10766665201712),
-      imgSrc : process.env.PUBLIC_URL+"/img/marker3.png", 
+      title : "부산 지점2", 
+      latlng : new kakao.maps.LatLng(35.15987975727686,129.16971691261583),
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     }
@@ -76,8 +77,11 @@ function Location(){
 
   return (
     <main className='location' ref={frame}>
-      <div className="inner">
-        <h1>Location</h1>
+      <div className="location__inner">
+        <div className="location__top__txt">
+            <h1>Location</h1>
+        </div>
+        
       
         <div id="map" ref={container}></div>
 
@@ -87,12 +91,12 @@ function Location(){
               <li onClick={()=>{
                 map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC); 
                 setToggle(!toggle);
-              }}>교통정보 OFF</li>       
+              }}>TRAFFIC OFF</li>       
             :            
               <li onClick={()=>{           
                 map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
                 setToggle(!toggle);
-              }}>교통정보 ON</li>
+              }}>TRAFFIC ON</li>
           } 
         </ul>
 

@@ -1,16 +1,32 @@
 .location {
-    .inner {
-      #map {
-        width: 100%; height: 500px; background: #000;
-      }
-  
-      .branch li {
-        color: #333; cursor: pointer;
-  
-        &.on {
-          color: hotpink;
+  .location__inner{
+    width:1180px; 
+    margin:0 auto; 
+        .location__top__txt{
+            height: 50px;
+            border-bottom: 1px solid var(--color-gray-01);
+            margin-bottom: 30px;
+            h1{
+                font:20px 'open sans';
+                color:var(--color-darkgray-01);
+                font-weight: 300;
+                padding-bottom: 20px;
+                letter-spacing: 1px;
+                margin-left:1030px;
+            }
         }
-      }
-    }
+        #map{
+          width: 60%; height: 500px; background:var(--color-black-00);
+        }
+        .branch li{
+          cursor: pointer;
+          color:var(--color-gray-01);
+
+          &.on {
+            color:var(--color-black-00);
+          }
+          }
+
+    
   }
-  
+}
