@@ -18,8 +18,8 @@ function Footer(){
                     <li>Join</li>
                 </ul>
 
-                <ul className="footer__adress">
-                    <li>Adress</li>
+                <ul className="footer__address">
+                    <li>Address</li>
                     <li>React Portfolio</li>
                     <li>Hamburger Allee 249</li>
                     <li>D-98533 Berlin</li>
@@ -29,13 +29,13 @@ function Footer(){
                 </ul>
                 </div>
 
-                <div className="footer__under">
-                    <div className="footer__under__left">
+                <div className="footer__bottom">
+                    <div className="footer__bottom__left">
                     <p>Copyright © 2022 React Porfolio. Alle Rechte vorbehalten</p>
                     <p>React Portfolio sowie das Logo sind eingetragene Handelsmarken</p>
                     </div>
         
-                    <div className="footer__under__right">
+                    <div className="footer__bottom__right">
                     <ul className="footer__sns">
                         <li><i className="fab fa-facebookr"></i></li>
                         <li><i className="fab fa-pinterest"></i></li>
