@@ -9,7 +9,7 @@
   --color-darkgray-01:#3f4144;
   --color-darkgray-02:#36373a;
   --color-black:#080808;
-  --color-light-black:#353d3d;
+  --color-light-black:#131212;
   --color-yellow-00:#e0bb42;
   --color-yellow-01:#cea72a;
   --color-orange:#e77213;
@@ -315,15 +315,16 @@ footer {
 #banner {
   width: 100%;
   padding: 300px 0;
-  background-color: black; }
+  background-color: var(--color-light-black); }
   #banner .banner__inner {
     width: 1180px;
     margin: 0 auto; }
     #banner .banner__inner h1 {
-      font: 30px normal; }
+      font: 24px/1.3 'dosis';
+      color: var(--color-gray-03); }
     #banner .banner__inner p {
-      font: 16px/1.3 'dosis';
-      color: white;
+      font: 20px/1.3 'dosis';
+      color: var(--color-gray-01);
       text-align: center; }
 
 #department {
