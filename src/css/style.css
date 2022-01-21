@@ -536,7 +536,40 @@ footer {
   .location .location__inner #map {
     width: 100%;
     height: 500px;
-    filter: grayscale(0.5); }
+    filter: grayscale(0.5);
+    background-color: var(--color-gray-01);
+    margin-bottom: 20px; }
+  .location .location__inner .traffic {
+    float: left;
+    display: flex; }
+    .location .location__inner .traffic li {
+      width: 100px;
+      height: 30px;
+      color: var(--color-white-00);
+      background: var(--color-orange);
+      font: 14px/30px 'dosis';
+      text-align: center;
+      cursor: pointer;
+      margin-right: 5px; }
+      .location .location__inner .traffic li:hover {
+        transition: 0.7s;
+        background: var(--color-skyblue); }
+  .location .location__inner .branch {
+    float: right;
+    display: flex; }
+    .location .location__inner .branch li {
+      width: 100px;
+      height: 30px;
+      color: var(--color-white-00);
+      background: var(--color-orange);
+      font: 14px/30px 'dosis';
+      text-align: center;
+      cursor: pointer;
+      margin-right: 5px; }
+      .location .location__inner .branch li.on {
+        color: #000;
+        transition: 0.7s;
+        background: var(--color-skyblue); }
 
 .join {
   width: 100%; }
