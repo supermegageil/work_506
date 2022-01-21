@@ -62,7 +62,8 @@ header {
         font-weight: 300;
         letter-spacing: 1px; }
       header .inner h1 :hover {
-        background-color: yellow; }
+        background-color: var(--color-white-00);
+        transform: scale(1.2); }
     header .inner #gnb {
       position: absolute;
       bottom: 41px;
@@ -76,7 +77,8 @@ header {
           color: var(--color-darkgray-00);
           font-weight: 300; }
         header .inner #gnb li :hover {
-          background-color: yellow; }
+          background-color: var(--color-white-00);
+          transform: scale(1.2); }
 
 main {
   padding: 10px 0px; }
@@ -119,6 +121,8 @@ footer {
             margin-bottom: 9px;
             color: var(--color-darkgray-00);
             cursor: pointer; }
+            footer .footer__inner .footer__top .footer__top__inner .footer__menu li a, footer .footer__inner .footer__top .footer__top__inner .footer__address li a {
+              color: var(--color-darkgray-00); }
             footer .footer__inner .footer__top .footer__top__inner .footer__menu li:nth-of-type(1), footer .footer__inner .footer__top .footer__top__inner .footer__address li:nth-of-type(1) {
               margin-bottom: 30px;
               cursor: default; }

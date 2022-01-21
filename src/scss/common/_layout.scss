@@ -29,7 +29,8 @@ header {
                 letter-spacing: 1px;
             }
             :hover{
-                background-color: yellow;
+                background-color: var(--color-white-00);
+                transform:scale(1.2);
             }
         }
 
@@ -43,8 +44,10 @@ header {
                     display: inline-block; 
                     font: 13px/1 'open sans'; color:var(--color-darkgray-00); font-weight: 300;
                 }
-                :hover{
-                    background-color: yellow;}
+                :hover{                  
+                  background-color: var(--color-white-00);
+                  transform:scale(1.2);
+                }
               
             }
         }
@@ -55,9 +58,7 @@ main {
     padding: 10px 0px;
 
     >.inner{
-        width: 1180px;min-height:500px; margin:0px auto;
-
-        
+        width: 1180px;min-height:500px; margin:0px auto;        
         }
     }
 
@@ -100,10 +101,16 @@ footer {
                 margin-right:100px;
           
                 li {
+                  
                   font: 13px/1 'open sans';
                   margin-bottom: 9px;
                   color:var(--color-darkgray-00);
                   cursor: pointer;
+
+                  a{
+                    color:var(--color-darkgray-00);
+
+                  }
         
                   &:nth-of-type(1) {
                     margin-bottom: 30px;

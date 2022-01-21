@@ -10,12 +10,12 @@ function Footer(){
 
                 <ul className="footer__menu">
                     <li>Menu</li>
-                    <li>Department</li>
-                    <li>Gallery</li>
-                    <li>Youtube</li>
-                    <li>Community</li>
-                    <li>Location</li>
-                    <li>Join</li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/department">Department</a></li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/gallery">Gallery</a></li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/youtube">Youtube</a></li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/community">Community</a></li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/location">Location</a></li>
+                    <li><a href="https://supermegageil.github.io/work_506/#/join">Join</a></li>
                 </ul>
 
                 <ul className="footer__address">
