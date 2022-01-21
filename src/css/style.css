@@ -553,23 +553,24 @@ footer {
       margin-right: 5px; }
       .location .location__inner .traffic li:hover {
         transition: 0.7s;
-        background: var(--color-skyblue); }
+        background: var(--color-white-00);
+        color: var(--color-darkgray-01); }
   .location .location__inner .branch {
     float: right;
     display: flex; }
     .location .location__inner .branch li {
       width: 100px;
       height: 30px;
-      color: var(--color-white-00);
-      background: var(--color-orange);
+      color: var(--color-light-black);
+      background: var(--color-white-00);
       font: 14px/30px 'dosis';
       text-align: center;
       cursor: pointer;
       margin-right: 5px; }
       .location .location__inner .branch li.on {
-        color: #000;
+        color: var(--color-light-black);
         transition: 0.7s;
-        background: var(--color-skyblue); }
+        background: var(--color-orange); }
 
 .join {
   width: 100%; }
