@@ -18,12 +18,11 @@ function Community(){
 
     return (
         <main className="community">
-            <div className="inner">
-            <h1><a href="#"></a></h1>
-
-        
-            
-
+            <div className="community__inner">
+                <div className="community__top__txt">
+                    <h1>Community</h1>
+                </div>
+                <div className="community__wrap">
                 {
                     posts.map((data, index)=>{
                         return (
@@ -36,8 +35,8 @@ function Community(){
                         )
                     })
                 }
+                </div>    
             </div>
-          
         </main>
     )
 }

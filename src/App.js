@@ -31,12 +31,7 @@ function App() {
          <Brand />
          <Banner />
       </Route>
-      <Route exact path="/work_505">
-         <Visual />
-         <Info />
-         <Brand />
-         <Banner />
-      </Route>
+     
 
       <Route exact path="/department" component={Department}></Route>
       <Route exact path="/community" component={Community}></Route>
