@@ -18,8 +18,8 @@ function Location(){
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },  
     {
-      title : "SUJI", 
-      latlng : new kakao.maps.LatLng(37.322348388040986,127.05850993971846),
+      title : "YONGIN", 
+      latlng : new kakao.maps.LatLng(37.231568046617994,127.19959193691425),
       imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg",
      
       imgSize : new kakao.maps.Size(232, 99),

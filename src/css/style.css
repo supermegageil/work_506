@@ -3,7 +3,7 @@
 :root {
   --color-white-00: #ffffff;
   --color-white-01:#efefef;
-  --color-gray-00:#cacad6;
+  --color-gray-00:#0000001a;
   --color-gray-01:#b2b2bb;
   --color-gray-02:#a0a0a7;
   --color-darkgray-00:#727279;
@@ -30,22 +30,6 @@ a {
 
 body {
   background: var(--color-white-01); }
-
-:root {
-  --color-white-00: #ffffff;
-  --color-white-01:#efefef;
-  --color-gray-00:#cacad6;
-  --color-gray-01:#b2b2bb;
-  --color-gray-02:#a0a0a7;
-  --color-darkgray-00:#727279;
-  --color-darkgray-01:#3f4144;
-  --color-darkgray-02:#36373a;
-  --color-black:#080808;
-  --color-light-black:#131212;
-  --color-yellow-00:#e0bb42;
-  --color-yellow-01:#cea72a;
-  --color-orange:#c68651;
-  --color-skyblue:#2aa8ce; }
 
 header {
   width: 100%; }
@@ -460,7 +444,7 @@ footer {
         width: 100%;
         height: 100%;
         background: #fff;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 10px var(--color-gray-00);
         padding: 18px; }
         #gallery .gallery__inner .gallery__wrap > section article > .inner .pic {
           width: 100%;
@@ -499,66 +483,81 @@ footer {
       cursor: pointer; }
 
 .youtube {
-  padding-top: 30px; }
-  .youtube .inner .frame::after {
-    content: "";
-    display: block;
-    clear: both; }
-  .youtube .inner .frame article {
-    width: 50%;
-    height: 48vh;
-    float: left;
-    padding: 20px;
-    overflow: hidden; }
-    .youtube .inner .frame article .inner {
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      box-shadow: 5px 5px 15px var(--color-light-black);
+  padding-top: 50px; }
+  .youtube .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .youtube .inner .youtube__top__txt {
+      height: 50px;
+      border-bottom: 1px solid var(--color-gray-01);
+      margin-bottom: 30px; }
+      .youtube .inner .youtube__top__txt h1 {
+        font: 20px 'open sans';
+        color: var(--color-darkgray-01);
+        font-weight: 300;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+        margin-left: 1030px; }
+    .youtube .inner .frame::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .youtube .inner .frame article {
+      width: 50%;
+      height: 48vh;
+      float: left;
       padding: 20px;
-      display: flex;
-      flex-wrap: wrap; }
-      .youtube .inner .frame article .inner .txt h2 {
-        font: 17px/1.2 "dosis";
-        color: #5a6662;
-        margin-bottom: 20px; }
-      .youtube .inner .frame article .inner .txt p {
-        font: 12px/1.2 "dosis";
-        color: #98aca5;
-        margin-bottom: 20px; }
-      .youtube .inner .frame article .inner .pic {
+      overflow: hidden; }
+      .youtube .inner .frame article .inner {
         width: 100%;
-        height: 200px; }
-        .youtube .inner .frame article .inner .pic:hover {
-          transform: scale(1.05);
-          transition: 1.5s; }
-        .youtube .inner .frame article .inner .pic img {
+        height: 100%;
+        background: var(--color-white-00);
+        box-shadow: 5px 5px 10px var(--color-gray-00);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap; }
+        .youtube .inner .frame article .inner .txt h2 {
+          font: 17px/1.2 "dosis";
+          color: #5a6662;
+          margin-bottom: 20px; }
+        .youtube .inner .frame article .inner .txt p {
+          font: 12px/1.2 "dosis";
+          color: #98aca5;
+          margin-bottom: 20px; }
+        .youtube .inner .frame article .inner .pic {
           width: 100%;
-          height: 100%;
-          object-fit: cover;
-          filter: grayscale(1); }
-        .youtube .inner .frame article .inner .pic:hover img {
-          filter: none;
-          transition: all 0.5s; }
-  .youtube .inner .pop {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 5vw; }
-    .youtube .inner .pop iframe {
-      border: none;
+          height: 200px; }
+          .youtube .inner .frame article .inner .pic:hover {
+            transform: scale(1.05);
+            transition: 1.5s; }
+          .youtube .inner .frame article .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(1); }
+          .youtube .inner .frame article .inner .pic:hover img {
+            filter: none;
+            transition: all 0.5s; }
+    .youtube .inner .pop {
       width: 100%;
-      height: 100%; }
-    .youtube .inner .pop span {
-      position: absolute;
-      top: 3vw;
-      right: 5vw;
-      font: bold 14px/1 "dosis";
-      color: #fff;
-      cursor: pointer; }
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: var(--color-black);
+      opacity: .9;
+      padding: 5vw; }
+      .youtube .inner .pop iframe {
+        border: none;
+        width: 100%;
+        height: 100%; }
+      .youtube .inner .pop span {
+        position: absolute;
+        top: 3vw;
+        right: 5vw;
+        font: bold 14px/1 "dosis";
+        color: #fff;
+        cursor: pointer; }
 
 .location {
   width: 100%;
@@ -577,7 +576,7 @@ footer {
         font-weight: 300;
         padding-bottom: 20px;
         letter-spacing: 1px;
-        margin-left: 1050px; }
+        margin-left: 1030px; }
     .location .location__inner #map {
       width: 100%;
       height: 500px;
@@ -622,13 +621,13 @@ footer {
 .join {
   width: 100%; }
   .join .inner {
-    width: 1180px;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     padding: 60px; }
     .join .inner fieldset {
       border: 5px solid var(--color-white-00);
-      padding: 20px; }
+      box-shadow: 5px 5px 10px var(--color-gray-00); }
       .join .inner fieldset table {
         width: 100%;
         background-color: var(--color-white-00);
@@ -640,21 +639,19 @@ footer {
           text-align: center;
           font: bold 14px/1 'dosis';
           color: var(--color-darkgray-00); }
-          .join .inner fieldset table th:hover {
-            background-color: yellow; }
           .join .inner fieldset table th.btnSet {
             text-align: center;
             border-right: none; }
             .join .inner fieldset table th.btnSet input[type=reset], .join .inner fieldset table th.btnSet input[type=submit] {
-              width: 18%;
+              width: 120px;
               height: 40px;
               text-align: center;
               margin: 10px;
               cursor: pointer;
               transition: 0.5s;
               border: none;
-              color: var(--color-darkgray-00);
-              background-color: yellow;
+              color: var(--color-white-00);
+              background-color: var(--color-orange);
               font: bold 16px 'dosis'; }
               .join .inner fieldset table th.btnSet input[type=reset]:hover, .join .inner fieldset table th.btnSet input[type=submit]:hover {
                 background: var(--color-white-00);
@@ -674,51 +671,35 @@ footer {
         .join .inner fieldset table td input[type=radio], .join .inner fieldset table td input[type=checkbox] {
           margin-right: 20px; }
     .join .inner .err {
-      font: 12px/1 'arial';
-      color: var(--color-skyblue); }
+      font: 12px/1 'sans';
+      color: var(--color-orange); }
 
 @media screen and (max-width: 1179px) {
-  .join .inner {
+  .inner {
     width: 100%;
-    padding: 0px; }
-    .join .inner fieldset table {
-      width: 100%;
-      padding: 0px; }
-      .join .inner fieldset table th, .join .inner fieldset table td {
-        padding: 10px 20px; }
-      .join .inner fieldset table th {
-        font: 16px/1 'dosis'; }
-        .join .inner fieldset table th.btnSet {
-          text-align: center;
-          border-right: none; }
-          .join .inner fieldset table th.btnSet input[type=reset], .join .inner fieldset table th.btnSet input[type=submit] {
-            width: 18%;
-            height: 40px;
-            text-align: center;
-            margin: 10px;
-            cursor: pointer;
-            transition: 0.5s;
-            border: none;
-            color: var(--color-darkgray-00);
-            background-color: yellow;
-            font: bold 16/40px 'dosis'; }
-      .join .inner fieldset table td input[type=text], .join .inner fieldset table td input[type=password], .join .inner fieldset table td select {
-        width: 70%;
-        padding: 10px 20px; }
-      .join .inner fieldset table td textarea {
-        width: 70%;
-        height: 150px;
-        padding: 10px 20px;
-        resize: none; }
-      .join .inner fieldset table td label {
-        font: 16px/1 'dosis';
-        color: var(--color-darkgray-02);
-        margin-right: 8px; }
-      .join .inner fieldset table td input[type=radio], .join .inner fieldset table td input[type=checkbox] {
-        margin-right: 20px; }
-    .join .inner .err {
-      font: 14px/1 'arial';
-      color: var(--color-skyblue); } }
+    padding: 50px; }
+    .inner th {
+      width: 25%;
+      text-align: center;
+      font: bold 20px/1 'dosis'; }
+      .inner th input[type=reset], .inner th input[type=submit] {
+        width: 30%;
+        font: bold 16px 'dosis'; } }
+td input[type=text], td input[type=password], td select {
+  width: 60%;
+  padding: 10px 20px; }
+td textarea {
+  width: 60%;
+  height: 150px;
+  padding: 10px 20px;
+  resize: none; }
+td label {
+  font: 16px/1 'dosis';
+  color: var(--color-darkgray-02);
+  margin-right: 8px; }
+td input[type=radio], td input[type=checkbox] {
+  margin-right: 20px; }
+
 @media screen and (max-width: 539px) {
   .join .inner {
     width: 100%; }
@@ -747,7 +728,6 @@ footer {
       .join .inner fieldset table td input[type=radio], .join .inner fieldset table td input[type=checkbox] {
         margin-right: 20px; }
     .join .inner .err {
-      font: 14px/1 'arial';
-      color: --color-skyblue; } }
+      font: 16px/1; } }
 
 /*# sourceMappingURL=style.css.map */

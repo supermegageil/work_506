@@ -1,14 +1,16 @@
   .join {
     width:100%;
     .inner {
-      width:1180px;
+      width:80%;
       margin: 0 auto;
       position:relative;
       padding:60px;
+      
 
        fieldset{
         border:5px solid var(--color-white-00);
-        padding:20px;
+        box-shadow: 5px 5px 10px var(--color-gray-00);
+        //padding:20px;
         
         table {
           width: 100%;
@@ -25,23 +27,21 @@
             font: bold 14px/1 'dosis';
             color:var(--color-darkgray-00);
 
-            &:hover{
-              background-color: yellow;
-            }
+            
     
             &.btnSet {
               text-align: center;  border-right: none;
     
               input[type=reset], input[type=submit] {
-                width: 18%;
+                width: 120px;
                 height: 40px;
                 text-align: center;
                 margin: 10px;
                 cursor: pointer;
                 transition: 0.5s;
                 border:none;
-                color:var(--color-darkgray-00);
-                background-color: yellow;
+                color:var(--color-white-00);
+                background-color: var(--color-orange);
                 font: bold 16px 'dosis';
                     
                 &:hover {
@@ -71,54 +71,43 @@
         }
       }
       
-  //폰트와 색 나중에 변경
+
       .err {
-        font: 12px/1 'arial'; color:var(--color-skyblue);
+        font: 12px/1 'sans'; color:var(--color-orange);
       }
   }
 }
 //tablet//
 @media screen and (max-width:1179px){
-  .join {
+
     .inner {
-      width:100%; 
-      padding:0px;
-         
-      fieldset{
-        table {
-          width: 100%;
-          padding: 0px;
-              
-          th, td {
-            padding: 10px 20px;
-          }
+      width:100%;
+      padding:50px;
     
-          th {            
-            font: 16px/1 'dosis';
-                
-            &.btnSet {
-              text-align: center;  border-right: none;
+          th {
+            width: 25%; 
+            text-align: center;
+            font: bold 20px/1 'dosis';
+             
+    
     
               input[type=reset], input[type=submit] {
-                width: 18%;
-                height: 40px;
-                text-align: center;
-                margin: 10px;
-                cursor: pointer;
-                transition: 0.5s;
-                border:none;
-                color:var(--color-darkgray-00);
-                background-color: yellow;
-                font: bold 16/40px 'dosis';
+                width: 30%;
+              
+                font: bold 16px 'dosis';
+                    
+             
                 }
               }
             }
+          }
+
           td {
             input[type=text], input[type=password], select {
-              width: 70%; padding: 10px 20px; 
+              width: 60%; padding: 10px 20px; 
             }
             textarea {
-              width: 70%; height: 150px; padding: 10px 20px;
+              width: 60%; height: 150px; padding: 10px 20px;
               resize: none;
             }
             label {
@@ -129,14 +118,9 @@
               margin-right: 20px;
             }
           }
-        }
-      }
-        .err {
-          font: 14px/1 'arial'; color:var(--color-skyblue);
-      }
-    }
-  }
-}
+    
+
+
 
 //mobile//
 @media screen and (max-width:539px){
@@ -186,7 +170,7 @@
         }    
       }
       .err {
-        font: 14px/1 'arial'; color:(--color-skyblue);
+        font: 16px/1
       }
     }
   }
