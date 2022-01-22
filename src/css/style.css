@@ -44,7 +44,7 @@ header {
       bottom: 45px; }
       header .inner h1 a {
         font: bold 14px/1 'open sans';
-        color: var(--color-gray-00);
+        color: var(--color-darkgray-00);
         font-weight: 300;
         letter-spacing: 1px; }
       header .inner h1 :hover {
@@ -619,30 +619,42 @@ footer {
           background: var(--color-orange); }
 
 .join {
-  width: 100%; }
-  .join .inner {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    padding: 60px; }
-    .join .inner fieldset {
-      border: 5px solid var(--color-white-00);
-      box-shadow: 5px 5px 10px var(--color-gray-00); }
-      .join .inner fieldset table {
-        width: 100%;
+  width: 100%;
+  height: 120vh;
+  padding: 50px 0px; }
+  .join .join__inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .join .join__inner .join__top__txt {
+      height: 50px;
+      border-bottom: 1px solid var(--color-gray-01);
+      margin-bottom: 30px; }
+      .join .join__inner .join__top__txt h1 {
+        font: 20px 'open sans';
+        color: var(--color-darkgray-01);
+        font-weight: 300;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+        margin-left: 1030px; }
+    .join .join__inner fieldset {
+      border: none; }
+      .join .join__inner fieldset table {
+        width: 90%;
         background-color: var(--color-white-00);
-        padding: 0px; }
-        .join .inner fieldset table th, .join .inner fieldset table td {
+        margin: 0 auto;
+        padding: 20px 0px 20px 0px;
+        box-shadow: 5px 5px 10px var(--color-gray-00); }
+        .join .join__inner fieldset table th, .join .join__inner fieldset table td {
           padding: 10px 20px; }
-        .join .inner fieldset table th {
+        .join .join__inner fieldset table th {
           width: 25%;
           text-align: center;
           font: bold 14px/1 'dosis';
           color: var(--color-darkgray-00); }
-          .join .inner fieldset table th.btnSet {
+          .join .join__inner fieldset table th.btnSet {
             text-align: center;
             border-right: none; }
-            .join .inner fieldset table th.btnSet input[type=reset], .join .inner fieldset table th.btnSet input[type=submit] {
+            .join .join__inner fieldset table th.btnSet input[type=reset], .join .join__inner fieldset table th.btnSet input[type=submit] {
               width: 120px;
               height: 40px;
               text-align: center;
@@ -653,24 +665,24 @@ footer {
               color: var(--color-white-00);
               background-color: var(--color-orange);
               font: bold 16px 'dosis'; }
-              .join .inner fieldset table th.btnSet input[type=reset]:hover, .join .inner fieldset table th.btnSet input[type=submit]:hover {
+              .join .join__inner fieldset table th.btnSet input[type=reset]:hover, .join .join__inner fieldset table th.btnSet input[type=submit]:hover {
                 background: var(--color-white-00);
                 color: var(--color-darkgray-02); }
-        .join .inner fieldset table td input[type=text], .join .inner fieldset table td input[type=password], .join .inner fieldset table td select {
+        .join .join__inner fieldset table td input[type=text], .join .join__inner fieldset table td input[type=password], .join .join__inner fieldset table td select {
           width: 70%;
           padding: 10px 20px; }
-        .join .inner fieldset table td textarea {
+        .join .join__inner fieldset table td textarea {
           width: 70%;
           height: 150px;
           padding: 10px 20px;
           resize: none; }
-        .join .inner fieldset table td label {
+        .join .join__inner fieldset table td label {
           font: 14px/1 'dosis';
           color: var(--color-darkgray-02);
           margin-right: 8px; }
-        .join .inner fieldset table td input[type=radio], .join .inner fieldset table td input[type=checkbox] {
+        .join .join__inner fieldset table td input[type=radio], .join .join__inner fieldset table td input[type=checkbox] {
           margin-right: 20px; }
-    .join .inner .err {
+    .join .join__inner .err {
       font: 12px/1 'sans';
       color: var(--color-orange); }
 

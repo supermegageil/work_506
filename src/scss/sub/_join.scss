@@ -1,21 +1,38 @@
   .join {
-    width:100%;
-    .inner {
-      width:80%;
-      margin: 0 auto;
-      position:relative;
-      padding:60px;
+    width:100%; 
+    height: 120vh;
+    padding: 50px 0px;
+    .join__inner {
+        width:1180px; 
+        margin:0 auto;
+        .join__top__txt{
+            height: 50px;
+            border-bottom: 1px solid var(--color-gray-01);
+            margin-bottom: 30px;
+            h1{
+                font:20px 'open sans';
+                color:var(--color-darkgray-01);
+                font-weight: 300;
+                padding-bottom: 20px;
+                letter-spacing: 1px;
+                margin-left:1030px;
+            }
+        }
+    
       
 
        fieldset{
-        border:5px solid var(--color-white-00);
-        box-shadow: 5px 5px 10px var(--color-gray-00);
-        //padding:20px;
+        
+        border:none;
+        
+        
         
         table {
-          width: 100%;
-          background-color: var(--color-white-00);;
-          padding: 0px;
+          width: 90%;
+          background-color: var(--color-white-00);
+          margin:0 auto;
+          padding: 20px 0px 20px 0px;
+          box-shadow: 5px 5px 10px var(--color-gray-00);
           
           th, td {
           padding: 10px 20px;

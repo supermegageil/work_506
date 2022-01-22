@@ -90,17 +90,18 @@ function Join(){
 
   return (
     <main className='join'>
-      <div className="inner">
+      <div className="join__inner">
+        <div className="join__top__txt">
+          <h1>Join</h1>
+        </div>
       
 
         {success ? <div>회원가입을 축하합니다.</div> : null }
 
         <form onSubmit={handleSubmit} >
-          <fieldset>
-            
+          <fieldset>       
 
-            <table>
-              
+            <table>              
               <tbody>
                 {/* userid */}
                 <tr>
@@ -259,15 +260,15 @@ function Join(){
                 {/* education */}
                 <tr>
                   <th scope='row'>
-                  <label htmlFor='edu'>FAVORITE COLOR</label>
+                  <label htmlFor='edu'>YOUR LOCATION</label>
                   </th>
                   <td>                    
-                    <select name="color" id="color" onChange={handleSelect}>
-                      <option value="">좋아하는 색을 선택하세요</option>
-                      <option value="red">빨강색</option>
-                      <option value="blue">파란색</option>
-                      <option value="green">녹색</option>
-                      <option value="yellow">노란색</option>
+                    <select name="location" id="location" onChange={handleSelect}>
+                      <option value="">지역을 선택하세요</option>
+                      <option value="seoulnorth">서울 북부</option>
+                      <option value="seoulsouch">서울 남부</option>
+                      <option value="geonggido">경기도</option>
+                      <option value="busan">부산</option>
                     </select>
                     <span className='err'>{err.edu}</span>
                   </td>
