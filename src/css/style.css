@@ -429,36 +429,52 @@ footer {
       .community .community__inner .community__wrap article .dateandwriter :hover {
         color: var(--color-skyblue); }
 
-.gallery {
-  padding-top: 30px; }
-  .gallery .inner > section::after {
-    content: "";
-    display: block;
-    clear: both; }
-  .gallery .inner > section article {
-    width: 25%;
-    height: 300px;
-    float: left;
-    padding: 20px; }
-    .gallery .inner > section article > .inner {
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-      padding: 18px; }
-      .gallery .inner > section article > .inner .pic {
+#gallery {
+  width: 100%;
+  height: 310vh;
+  padding: 50px 0px; }
+  #gallery .gallery__inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #gallery .gallery__inner .gallery__top__txt {
+      height: 50px;
+      border-bottom: 1px solid var(--color-gray-01);
+      margin-bottom: 30px; }
+      #gallery .gallery__inner .gallery__top__txt h1 {
+        font: 20px 'open sans';
+        color: var(--color-darkgray-01);
+        font-weight: 300;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+        margin-left: 1030px; }
+    #gallery .gallery__inner .gallery__wrap > section::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #gallery .gallery__inner .gallery__wrap > section article {
+      width: 25%;
+      height: 300px;
+      float: left;
+      padding: 20px; }
+      #gallery .gallery__inner .gallery__wrap > section article > .inner {
         width: 100%;
-        height: 180px;
-        margin-bottom: 20px; }
-        .gallery .inner > section article > .inner .pic img {
+        height: 100%;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 18px; }
+        #gallery .gallery__inner .gallery__wrap > section article > .inner .pic {
           width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .gallery .inner > section article > .inner h2 {
-        font: normal 14px/1.2 "dosis";
-        color: #777;
-        text-align: center; }
-  .gallery .pop {
+          height: 180px;
+          margin-bottom: 20px; }
+          #gallery .gallery__inner .gallery__wrap > section article > .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #gallery .gallery__inner .gallery__wrap > section article > .inner h2 {
+          font: normal 14px/1.2 "dosis";
+          color: #777;
+          text-align: center; }
+  #gallery .pop {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -466,15 +482,15 @@ footer {
     left: 0px;
     background: rgba(0, 0, 0, 0.9);
     padding: 5vw; }
-    .gallery .pop img {
+    #gallery .pop img {
       width: 100%;
       height: 100%;
       object-fit: contain; }
-    .gallery .pop p {
+    #gallery .pop p {
       font: 14px/1.2 "dosis";
       color: #fff;
       text-align: center; }
-    .gallery .pop span {
+    #gallery .pop span {
       font: bold 14px/1 "dosis";
       color: #fff;
       position: absolute;

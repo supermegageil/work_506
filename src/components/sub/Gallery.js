@@ -23,33 +23,38 @@ function Gallery(){
       },[]);
 
     return (
-        <main className="gallery">
-            <div className="inner">
-            <h1><a href="#"></a></h1>
+        <main id="gallery">
+            <div className="gallery__inner">
+              <div className="gallery__top__txt">
+                    <h1>Gallery</h1>
+                </div>
+            
 
-                <section className="">
-                    {
-                        items.map((item,index)=>{
-                            const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
-
-                            return(
-                                <article key={index}>
-                                  <div className="inner">
-                                    <div className="pic" onClick={()=>{setIsPop(true);
-
-                                      setIndex(index);
-                                      console.log(index);}}>
-                                      <img src={imgSrc} />
-                                    </div>
-              
-                                  <h2>{item.title}</h2>
-                                </div>
-                              </article>
-                            )              
-                          })
-                        }
-                      
-                </section>
+                <div className="gallery__wrap">
+                  <section className="">
+                      {
+                          items.map((item,index)=>{
+                              const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
+                  
+                              return(
+                                  <article key={index}>
+                                    <div className="inner">
+                                      <div className="pic" onClick={()=>{setIsPop(true);
+                  
+                                        setIndex(index);
+                                        console.log(index);}}>
+                                        <img src={imgSrc} />
+                                      </div>
+                  
+                                    <h2>{item.title}</h2>
+                                  </div>
+                                </article>
+                              )              
+                            })
+                          }
+                        
+                  </section>
+                </div>
             </div>
             { isPop ? <Pop /> : null }
         </main>
