@@ -1,6 +1,6 @@
 #department{
     width:100%; 
-    height: 310vh;
+    height: 200vh;
     padding: 50px 0px;
 
     .department__inner{
@@ -19,16 +19,21 @@
                 margin-left:1030px;
             }
         }
+
         .department__wrap{
             width: 100%;
 
             article{
-                width: 100%;
+                width: 33%;
+                margin:0 auto;
+                float:left;
+                padding:10px;
+                
                 .department__pic{
-                    width: 30%;
-                    height: 300px;
+                    width: 100%;
+                    height: 400px;
                     overflow: hidden;
-                    display: inline-block;
+                    
 
                     img{
                         filter: grayscale(.8);
@@ -44,11 +49,12 @@
                 }
                 .department__description{
                     width: 100%;
+                    height: 200px;
                     h3{
                         font:16px 'open sans';
                         color:var(--color-darkgray-01);
                         font-weight: 300;
-                        float:right;
+                        //float:right;
                         padding:20px;
                     }
                     p{
