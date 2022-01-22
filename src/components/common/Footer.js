@@ -5,7 +5,7 @@ function Footer(){
     <footer>
         <div className="footer__inner">
             <div className="footer__top">
-                <h1><a href="#"><i class="fas fa-mountain"></i></a>Lorem ipsum dolor sit amet.</h1>
+                <h1><a href="#"><i class="fab fa-adn"></i></a>Lorem ipsum dolor sit amet.</h1>
                 <div className="footer__top__inner">
 
                 <ul className="footer__menu">

@@ -1,19 +1,20 @@
 :root{
-    //color
-    --color-white-00: #ffffff;
-    --color-white-01:#efefef;;
-    --color-gray-00:#cacad6;
-    --color-gray-01:#b2b2bb;
-    --color-darkgray-00:#59595d;
-    --color-darkgray-01:#3f4144;
-    --color-darkgray-02:#36373a;
-    --color-black:#080808;
-    --color-light-black:#353d3d;
-    --color-yellow-00:#e0bb42;
-    --color-yellow-01:#cea72a;
-    --color-orange:#e77213;
-    --color-skyblue:#2aa8ce;
-
+  //color
+  --color-white-00: #ffffff;
+  --color-white-01:#efefef;;
+  --color-gray-00:#cacad6;
+  --color-gray-01:#b2b2bb;
+  --color-gray-02:#a0a0a7;
+  --color-darkgray-00:#727279;
+  --color-darkgray-01:#3f4144;
+  --color-darkgray-02:#36373a;
+  --color-black:#080808;
+  --color-light-black:#131212;
+  --color-yellow-00:#e0bb42;
+  --color-yellow-01:#cea72a;
+  --color-orange:#c68651;
+  --color-skyblue:#2aa8ce;
+  
 }
 
 header {
@@ -25,12 +26,14 @@ header {
         h1{
             position: absolute; left: 0px; bottom: 45px;
             a{
-                font: bold 14px/1 'open sans'; color: var(--color-darkgray-00); font-weight: 300;
+                font: bold 14px/1 'open sans'; color: var(--color-gray-00); font-weight: 300;
                 letter-spacing: 1px;
             }
             :hover{
                 background-color: var(--color-white-00);
-                transform:scale(1.2);
+                color:var(--color-black);
+                transition: .7s;
+                
             }
         }
 
@@ -47,8 +50,9 @@ header {
                 :hover{                  
                   background-color: var(--color-white-00);
                   transform:scale(1.2);
-                }
-              
+                  transition: .7s;
+                  color:var(--color-black);
+                }             
             }
         }
     }
@@ -80,13 +84,14 @@ footer {
             flex-wrap: wrap;
       
             i{
-              margin-right: 20px;
-              color:var(--color-darkgray-00);
+              margin-right: 10px;
+              color:var(--color-gray-02);
               font-size: 40px;
+              transform:translateY(3px);
             }
             h1{
               font:20px bold 'open sans';
-              color:var(--color-darkgray-00);
+              color:var(--color-gray-02);
             }
             
             .footer__top__inner {
@@ -109,8 +114,8 @@ footer {
 
                   a{
                     color:var(--color-darkgray-00);
-
                   }
+                  
         
                   &:nth-of-type(1) {
                     margin-bottom: 30px;

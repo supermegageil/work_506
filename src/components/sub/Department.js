@@ -2,7 +2,7 @@ const path = process.env.PUBLIC_URL;
 
 function Department() {
     return (
-        <div id="department">
+        <main id="department">
             <div className="department__inner">
                 <div className="department__top__txt">
                     <h1>Department</h1>
@@ -65,7 +65,7 @@ function Department() {
                     </article>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 
