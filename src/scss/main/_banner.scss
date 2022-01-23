@@ -1,19 +1,20 @@
 #banner{
     width:100%; 
     padding:200px 0; 
-    color:var(--color-darkgray-02);
+    background-color:var(--color-darkgray-02);
+    opacity:.9;
  
     .banner__inner{
         width:1180px; 
         margin:0 auto; 
  
         h1{
-            font:24px/1.3 'dosis'; 
-            color:var(--color-gray-02); 
+            font:20px/1.3 'dosis'; 
+            color:var(--color-light-black); 
             
         }
         p{
-            font:20px/1.3 'dosis'; 
+            font:16px/1.3 'dosis'; 
             color:var(--color-gray-01); 
             text-align:center; 
         }

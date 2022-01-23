@@ -88,108 +88,19 @@
         }
       }
       
-
       .err {
         font: 12px/1 'sans'; color:var(--color-orange);
       }
   }
 }
+
+
 //tablet//
 @media screen and (max-width:1179px){
-
-    .inner {
-      width:100%;
-      padding:50px;
-    
-          th {
-            width: 25%; 
-            text-align: center;
-            font: bold 20px/1 'dosis';
-             
-    
-    
-              input[type=reset], input[type=submit] {
-                width: 30%;
-              
-                font: bold 16px 'dosis';
-                    
-             
-                }
-              }
-            }
-          }
-
-          td {
-            input[type=text], input[type=password], select {
-              width: 60%; padding: 10px 20px; 
-            }
-            textarea {
-              width: 60%; height: 150px; padding: 10px 20px;
-              resize: none;
-            }
-            label {
-              font: 16px/1 'dosis'; color:var(--color-darkgray-02); margin-right: 8px;
-              
-            }
-            input[type=radio], input[type=checkbox] {
-              margin-right: 20px;
-            }
-          }
-    
+}
 
 
 
 //mobile//
 @media screen and (max-width:539px){
-
-  .join {
-    .inner {
-      width:100%;
-      fieldset{
-          table {
-          width: 100%;
-          
-          th, td {
-            border-bottom: 1px solid rgb(28,42,43);
-            padding: 15px 30px;
-          }
-    
-          th {
-            font: 16px/1 'dosis';
-            color:var(--color-darkgray-00);
-    
-            &.btnSet {
-              text-align: center;  
-              border-right: none;
-    
-              input[type=reset], input[type=submit] {
-                width:20%;
-                height: 45px;
-                font:bold 16px/45px 'dosis';
-              }
-            }
-          }
-          td {
-            input[type=text], input[type=password], select {
-              width: 80%; 
-            }
-            textarea {
-              width: 80%; 
-            }
-            label {
-              font: 14px/1 'dosis'; 
-              color:var(--color-darkgray-02);
-            }
-            input[type=radio], input[type=checkbox] {
-              margin-right: 20px;
-            }
-          }
-        }    
-      }
-      .err {
-        font: 16px/1
-      }
-    }
-  }
 }
-
