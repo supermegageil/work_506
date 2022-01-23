@@ -1,8 +1,16 @@
+
+import { useEffect, useRef } from "react";
 const path = process.env.PUBLIC_URL;
 
 function Department() {
+    const frame = useRef(null);
+
+    useEffect(()=>{
+        frame.current.classList.add('on');
+    },[])
+
     return (
-        <main id="department">
+        <main id="department"  ref={frame}>
             <div className="department__inner">
                 <div className="department__top__txt">
                     <h1>Department</h1>

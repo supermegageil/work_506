@@ -1,17 +1,22 @@
 
 import axios from "axios";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 
 const body = document.querySelector("body");
+
+
+
+
 
 function Gallery(){
     let [items, setItems] = useState([]);
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);
 
-
+    const frame = useRef(null);
     const api_key="4f0c7aacc8689e7a16060a7f710cf848";
     const url = `https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=${api_key}&per_page=48&format=json&nojsoncallback=1`;
+    
 
     useEffect(()=>{
         axios
@@ -20,10 +25,11 @@ function Gallery(){
             console.log(json);
             setItems(json.data.photos.photo);
           })
+          frame.current.classList.add('on');
       },[]);
 
     return (
-        <main id="gallery">
+        <main id="gallery"  ref={frame}>
             <div className="gallery__inner">
               <div className="gallery__top__txt">
                     <h1>Gallery</h1>

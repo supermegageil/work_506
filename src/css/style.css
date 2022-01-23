@@ -67,6 +67,14 @@ header {
           transition: .7s;
           color: var(--color-black); }
 
+main {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(100px); }
+  main.on {
+    opacity: 1;
+    transform: translateY(0px); }
+
 footer {
   width: 100%;
   background: var(--color-white-01); }
@@ -500,7 +508,7 @@ footer {
           align-items: center; }
           .community .community__wrap .showBox article .btns li {
             cursor: pointer;
-            font: 10px/1 "dosis";
+            font: 12px/30px "dosis";
             color: var(--color-orange);
             margin-left: 10px; }
 

@@ -37,6 +37,13 @@ header {
     }
 }
 
+main {
+ 
+  transition: 1s; opacity: 0; transform: translateY(100px);
+  &.on {
+    opacity: 1; transform: translateY(0px);
+  }
+}
 
 footer {
         width: 100%; 
