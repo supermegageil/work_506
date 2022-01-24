@@ -22,7 +22,7 @@ function Youtube(){
   },[]);
 
   return (
-    <main className="youtube" ref={frame}>
+    <div className="youtube" ref={frame}>
       <div className="inner">
         <div className="youtube__top__txt">
           <h1>Youtube</h1>
@@ -59,7 +59,7 @@ function Youtube(){
 
         {isPop ? <Pop /> : null}
       </div>
-    </main>
+    </div>
   )
 
   function Pop(){    
@@ -70,7 +70,7 @@ function Youtube(){
         ></iframe>
         <span onClick={()=>{
           setIsPop(false);
-        }}>close</span>
+        }}>CLOSE</span>
       </aside>
     )
   }

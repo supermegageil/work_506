@@ -27,7 +27,6 @@ header {
                     font: 13px/1 'open sans'; color:var(--color-darkgray-00); font-weight: 300;
                 }
                 :hover{                  
-                  
                   transform:scale(1.2);
                   transition: .7s;
                   color:var(--color-black);
@@ -38,7 +37,6 @@ header {
 }
 
 main {
- 
   transition: 1s; opacity: 0; transform: translateY(100px);
   &.on {
     opacity: 1; transform: translateY(0px);

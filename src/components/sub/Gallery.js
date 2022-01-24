@@ -4,10 +4,6 @@ import {useEffect, useState, useRef} from "react";
 
 const body = document.querySelector("body");
 
-
-
-
-
 function Gallery(){
     let [items, setItems] = useState([]);
     let [isPop, setIsPop] = useState(false);
@@ -29,7 +25,7 @@ function Gallery(){
       },[]);
 
     return (
-        <main id="gallery"  ref={frame}>
+        <div id="gallery"  ref={frame}>
             <div className="gallery__inner">
               <div className="gallery__top__txt">
                     <h1>Gallery</h1>
@@ -63,7 +59,7 @@ function Gallery(){
                 </div>
             </div>
             { isPop ? <Pop /> : null }
-        </main>
+        </div>
     )
     function Pop(){
       const imgSrc = `https://live.staticflickr.com/${items[index].server}/${items[index].id}_${items[index].secret}_b.jpg`;
@@ -84,7 +80,7 @@ function Gallery(){
           <p>{items[index].title}</p>
           <span onClick={()=>{
             setIsPop(false);
-          }}>Close</span>
+          }}>CLOSE</span>
         </aside>
       )            
   }
