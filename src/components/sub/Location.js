@@ -13,14 +13,14 @@ function Location(){
     {
       title : "SEOUL",  
       latlng : new kakao.maps.LatLng(37.569907325261084,126.99291397832287),
-      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker1.svg", 
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     },  
     {
       title : "YONGIN", 
       latlng : new kakao.maps.LatLng(37.231568046617994,127.19959193691425),
-      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg",
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker1.svg",
      
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
@@ -28,7 +28,7 @@ function Location(){
     {
       title : "BUSAN", 
       latlng : new kakao.maps.LatLng(35.15987975727686,129.16971691261583),
-      imgSrc : process.env.PUBLIC_URL+"/img/Marker.svg", 
+      imgSrc : process.env.PUBLIC_URL+"/img/Marker1.svg", 
       imgSize : new kakao.maps.Size(232, 99),
       imgPos : {offset: new kakao.maps.Point(116, 99)}
     }
