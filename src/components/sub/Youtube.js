@@ -22,6 +22,7 @@ function Youtube(){
   },[]);
 
   return (
+    <>
     <main className="youtube" ref={frame}>
       <div className="inner">
         <div className="youtube__top__txt">
@@ -57,9 +58,11 @@ function Youtube(){
           }
         </section>
 
-        {isPop ? <Pop /> : null}
+        
       </div>
     </main>
+    {isPop ? <Pop /> : null}
+    </>
   )
 
   function Pop(){    

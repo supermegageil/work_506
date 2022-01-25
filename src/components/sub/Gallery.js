@@ -25,6 +25,7 @@ function Gallery(){
       },[]);
 
     return (
+      <>
         <main id="gallery"  ref={frame}>
             <div className="gallery__inner">
               <div className="gallery__top__txt">
@@ -58,8 +59,10 @@ function Gallery(){
                   </section>
                 </div>
             </div>
-            { isPop ? <Pop /> : null }
+            
         </main>
+        { isPop ? <Pop /> : null }
+        </>
     )
     function Pop(){
       const imgSrc = `https://live.staticflickr.com/${items[index].server}/${items[index].id}_${items[index].secret}_b.jpg`;
