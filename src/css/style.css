@@ -396,7 +396,7 @@ footer {
             object-fit: cover;
             filter: brightness(1.1); }
         #department .department__inner .department__content .department__content__pics .department__content__pic4 {
-          width: 580px;
+          width: 280px;
           height: 300px;
           float: left;
           margin-right: 20px;
@@ -410,9 +410,10 @@ footer {
             overflow: hidden; }
             #department .department__inner .department__content .department__content__pics .department__content__pic4 .department__content__pic4__txt > p {
               font: 14px 'open sans';
-              color: var(--color-darkgray-00); }
+              color: var(--color-darkgray-00);
+              display: none; }
         #department .department__inner .department__content .department__content__pics .department__content__pic5 {
-          width: 580px;
+          width: 880px;
           height: 300px;
           float: left;
           margin-right: 0px;
